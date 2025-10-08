@@ -22,17 +22,28 @@
             overflow: hidden;
         }
 
+        .coluna1{
+            background-color: #006969;
+            width: 50%;
+            color: #fff;
+        }
+
+        .coluna2{
+            background-color: #008887;
+            width: 50%;
+            color: #fff;
+        }
+
         .header {
             padding: 20px;
         }
 
         .flex-container{
             display: flex;
-            background-color: #006969;
-            justify-content: space-around;
-            padding: 20px;
+            justify-content: space-around; 
         }
 
+        
         .header-tittle{
             color: #006f6f;
             font-size: 32px;
@@ -50,6 +61,44 @@
         .header-subtittle2{
             margin-left: 20px;
         }
+
+        .sub-assinatura{
+            color: #ffffff;
+            font-size: 18px;
+            margin-left: 70px;
+        }
+
+        .price{
+            font-size: 26px;
+            font-weight: 700;
+            margin-left: 15px;
+        }
+
+        .month{
+            font-style: italic;
+            margin-left: 17px;
+        }
+
+        .cancel{
+            margin-left: 15px;
+        }
+
+        .button{
+            margin-left: 15px;
+            margin-bottom: 15px;
+            padding: 15px 87px;
+            color: #006969;
+            font-size: 16px;
+            border-radius: 5px;
+            border: none;
+            background-color: #CCCCCC;
+            cursor: pointer;
+        }
+
+        .button:hover{
+            background-color: #E9E9E9;
+        }
+
     </style>
 
 </head>
@@ -57,16 +106,25 @@
     <div class="container">
         <div class="header">
             <div class="header-tittle">Entre para a nossa comunidade!</div><br>
-            <div class="header-subtittle1">Faça a sua assiantura agora e ganhe 30% de desconto!</div><br>
+            <div class="header-subtittle1">Faça a sua assinatura agora e ganhe 30% de desconto!</div><br>
             <div class="header-subtittle2">Faça parte da nossa comunidade de desenvolvedores.<br>
                 Tenha suporte da nossa equipe e cresça mais rápido na sua carreira.
             </div>
         </div>
         <div class="flex-container">
-            <div>
-                Coluna 1
+            <div class="coluna1"><br>
+                <div class="sub-assinatura">Assinatura mensal:</div><br>
+                <div>
+                    <span class="price">R$ 99,99</span>
+                    <span class="month">por mês.</span>
+                </div>  
+                <div class="cancel">Cancele a qualquer momento.</div><br>
+                <button class="button">
+                    Assine Agora
+                </button>
+
             </div>
-            <div>
+            <div class="coluna2">
                 Coluna 2
             </div>
         </div>
