@@ -31,8 +31,8 @@
         }
 
         .groups{
-            padding-left: 45%;
-            margin-top: 7px;
+            display: block;
+            margin: auto;
         }
 
         .header {
